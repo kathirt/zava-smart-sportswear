@@ -53,7 +53,8 @@ Purposeful motion that communicates innovation and energy while guiding user att
 - **Animations**: Framer Motion 12.6.2  
 - **Icons**: Phosphor Icons  
 - **State Management**: TanStack React Query  
-- **Form Handling**: React Hook Form with Zod validation
+- **Form Handling**: React Hook Form with Zod validation  
+- **Testing**: Vitest, React Testing Library, @testing-library/jest-dom
 
 ## �️ Database Architecture Recommendation
 
@@ -87,12 +88,34 @@ npm run dev
 - `npm run build` - Build for production  
 - `npm run preview` - Preview production build  
 - `npm run lint` - Run ESLint  
-- `npm run optimize` - Optimize dependencies
+- `npm run optimize` - Optimize dependencies  
+- `npm test` - Run unit tests  
+- `npm run test:ui` - Run tests with interactive UI  
+- `npm run test:coverage` - Generate test coverage report
 
 ## 🌐 Live Demo
 
 Experience Zava Smart Sportswear in action!  
 [View the Live Demo](https://patrick-vuong.github.io/zava-smart-sportswear/)
+
+## 🧪 Testing
+
+The application includes comprehensive unit tests covering:  
+- **Utility Functions**: Helper functions and utilities  
+- **Custom Hooks**: React hooks like mobile detection  
+- **Components**: All major UI components  
+- **User Interactions**: Button clicks, form inputs, navigation  
+
+**Test Coverage**: 64+ tests across 9 test files
+
+Run tests with:
+```bash
+npm test              # Run all tests
+npm run test:ui       # Interactive test UI
+npm run test:coverage # Generate coverage report
+```
+
+See [Testing Guide](src/test/README.md) for more details.
 
 ## 📱 Responsive Design
 
